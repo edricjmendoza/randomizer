@@ -44,7 +44,7 @@ function setup() {
   // console.log("array after unshift")
   // console.log(cars);
 
-setTimeout(changeBackground, 1000);
+// setTimeout(changeBackground, 1000);
 // setInterval(changeBackground, 1000);
 
 }
@@ -56,22 +56,23 @@ function draw() {
 
   }
 }
-function changeBackground(){
-  if (counter <= 5){
-    counter++;
-    console.log(counter)
-
-  background(random(255), random(255), random(255));
-  setTimeout(changeBackground, 1000);
-} else {
-
-}
-}
+// function changeBackground(){
+//   if (counter <= 5){
+//     counter++;
+//     console.log(counter)
+//
+//   background(random(255), random(255), random(255));
+//   setTimeout(changeBackground, 1000);
+// } else {
+//
+// }
+// }
 function randomizer(){
   animating = false;
-  if (cars[0]){
+
+  if (cars[0]) {
     background(random(200,225));
-    randomIndex = int(random(dog.length));
+    randomIndex = int(random(cars.length));
     // text(`${cars[randomIndex].name} is inspect ${cars[randomIndex].color}`, 50, 50);
     text(cars[randomIndex].name + " is " + cars[randomIndex].color, 50, 50);
     cars.splice(randomIndex, 1);
