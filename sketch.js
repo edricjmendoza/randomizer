@@ -12,7 +12,7 @@ let cars = [{
   color: "blue"
 }, {
   name: "venue",
-  color: "blue"
+  color: "cobalt blue"
 }];
 
 let randomIndex;
@@ -50,11 +50,9 @@ function setup() {
 }
 
 function draw() {
-
-  if (animating == true){
-    ellipse(random(width), random(height), random(50, 200));
-
-  }
+if (animating == true){
+  ellipse(random(width), random(height), random(50, 200));
+}
 }
 // function changeBackground(){
 //   if (counter <= 5){
@@ -69,16 +67,15 @@ function draw() {
 // }
 function randomizer(){
   animating = false;
-
-  if (cars[0]) {
+  if (cars[0]){
     background(random(200,225));
-    randomIndex = int(random(cars.length));
-    text(`${cars[randomIndex].name} is ${cars[randomIndex].color}`, 50, 50);
+    randomIndex = int(random(dog.length));
+    text(`${cars[randomIndex].name} is inspect ${cars[randomIndex].color}`, 50, 50);
     // text(cars[randomIndex].name + " is " + cars[randomIndex].color, 50, 50);
     cars.splice(randomIndex, 1);
   } else {
     background(random(200,225));
-    text("nothing left", 50, 50);
+    text("noting left!", 50, 50);
   }
 }
 
