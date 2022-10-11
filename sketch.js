@@ -52,7 +52,7 @@ function setup() {
 function draw() {
 
   if (animating == true){
-    triangle(random(width), random(height), random(50, 200));
+    ellipse(random(width), random(height), random(50, 200));
 
   }
 }
