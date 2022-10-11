@@ -44,27 +44,29 @@ function setup() {
   // console.log("array after unshift")
   // console.log(cars);
 
-// setTimeout(changeBackground, 1000);
+setTimeout(changeBackground, 1000);
 // setInterval(changeBackground, 1000);
 
 }
 
 function draw() {
-if (animating == true){
-  ellipse(random(width), random(height), random(50, 200));
+
+  if (animating == true){
+    triangle(random(width), random(height), random(50, 200));
+
+  }
+}
+function changeBackground(){
+  if (counter <= 5){
+    counter++;
+    console.log(counter)
+
+  background(random(255), random(255), random(255));
+  setTimeout(changeBackground, 1000);
+} else {
+
 }
 }
-// function changeBackground(){
-//   if (counter <= 5){
-//     counter++;
-//     console.log(counter)
-//
-//   background(random(255), random(255), random(255));
-//   setTimeout(changeBackground, 1000);
-// } else {
-//
-// }
-// }
 function randomizer(){
   animating = false;
   if (cars[0]){
