@@ -12,7 +12,7 @@ let cars = [{
   color: "blue"
 }, {
   name: "venue",
-  color: "cobolt"
+  color: "cobalt blue"
 }];
 
 let randomIndex;
