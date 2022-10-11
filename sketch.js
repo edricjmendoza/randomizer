@@ -70,8 +70,8 @@ function randomizer(){
   if (cars[0]){
     background(random(200,225));
     randomIndex = int(random(dog.length));
-    text(`${cars[randomIndex].name} is inspect ${cars[randomIndex].color}`, 50, 50);
-    // text(cars[randomIndex].name + " is " + cars[randomIndex].color, 50, 50);
+    // text(`${cars[randomIndex].name} is inspect ${cars[randomIndex].color}`, 50, 50);
+    text(cars[randomIndex].name + " is " + cars[randomIndex].color, 50, 50);
     cars.splice(randomIndex, 1);
   } else {
     background(random(200,225));
